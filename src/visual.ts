@@ -147,7 +147,7 @@ export class Visual implements IVisual {
     const yTitle = (objects as any)?.axes?.yTitle ?? (yCol.source.displayName ?? "");
 
     // Margens: espaço extra para rótulos e equação
-    const margin = { top: 10, right: 10, bottom: 100, left: 72 };
+    const margin = { top: 10, right: 10, bottom: 72, left: 72 };
     const w = Math.max(0, viewport.width - margin.left - margin.right);
     const h = Math.max(0, viewport.height - margin.top - margin.bottom);
     this.root.attr("transform", `translate(${margin.left},${margin.top})`);
