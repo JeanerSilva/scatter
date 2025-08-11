@@ -1,0 +1,55 @@
+{
+  "dataRoles": [
+    { "name": "category", "displayName": "Categoria", "kind": "Grouping" },
+    { "name": "x", "displayName": "X", "kind": "Measure" },
+    { "name": "y", "displayName": "Y", "kind": "Measure" },
+    { "name": "tooltips", "displayName": "Tooltips", "kind": "Measure" }
+  ],
+  "dataViewMappings": [
+    {
+      "conditions": [
+        { "category": { "max": 1 }, "x": { "max": 1 }, "y": { "max": 1 }, "tooltips": { "max": 5 } }
+      ],
+      "categorical": {
+        "categories": {
+          "for": { "in": "category" },
+          "dataReductionAlgorithm": { "top": {} }
+        },
+        "values": {
+          "select": [
+            { "bind": { "to": "x" } },
+            { "bind": { "to": "y" } },
+            { "for": { "in": "tooltips" } }
+          ]
+        }
+      }
+    }
+  ],
+  "objects": {
+    "points": {
+      "displayName": "Pontos",
+      "properties": {
+        "size": { "displayName": "Tamanho", "type": { "numeric": true } },
+        "color": { "displayName": "Cor", "type": { "fill": { "solid": { "color": true } } } }
+      }
+    },
+    "trendline": {
+      "displayName": "Linha de tendência",
+      "properties": {
+        "show": { "displayName": "Exibir", "type": { "bool": true } },
+        "color": { "displayName": "Cor", "type": { "fill": { "solid": { "color": true } } } },
+        "strokeWidth": { "displayName": "Espessura", "type": { "numeric": true } }
+      }
+    },
+    "axes": {
+      "displayName": "Eixos",
+      "properties": {
+        "xTitle": { "displayName": "Título X", "type": { "text": true } },
+        "yTitle": { "displayName": "Título Y", "type": { "text": true } }
+      }
+    }
+  },
+  "supportsHighlight": false,
+  "sorting": { "default": {} },
+  "privileges": []
+}

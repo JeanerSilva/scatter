@@ -1,0 +1,17 @@
+{
+		"version": "1.0.0.0",
+		"author": {"name":"jeaner","email":"jeaner@gmail"},
+		"resources": [
+			{
+				"resourceId": "rId0",
+				"sourceType": 5,
+				"file": "resources/scatter7D421D261C7C4B9D82D2C4FDD68D1236.pbiviz.json"
+			}
+		],
+		"visual": {"name":"scatter","displayName":"scatter","guid":"scatter7D421D261C7C4B9D82D2C4FDD68D1236","visualClassName":"Visual","version":"1.0.0.0","description":"Gráfico de dispersão com linha de tendência e cálculo de R²","supportUrl":"www.c.c","gitHubUrl":""},
+		"metadata": {
+			"pbivizjson": {
+				"resourceId": "rId0"
+			}
+		}
+	}
